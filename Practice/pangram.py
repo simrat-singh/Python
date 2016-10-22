@@ -1,4 +1,4 @@
-import string, sys
+import string
 def ispangram(str1):
     alphabet_set = set(string.ascii_lowercase)
     return alphabet_set <= set(str1.lower())
