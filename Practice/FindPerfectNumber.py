@@ -2,7 +2,7 @@
 #The function returns TRUE if number is perfect else it returns FALSE
 
 def checkPerfection(number):
-    #print("Checking ", number) #Uncomment this line to see the progress if input is more than 10000
+    print("Checking ", number) #Uncomment this line to see the progress if input is more than 10000
     divisor_sum = 0
     if(number<0):
         return False
