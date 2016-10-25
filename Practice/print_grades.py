@@ -17,8 +17,7 @@ def remove_white_spaces(record):
 
 def create_record(temp_record):
 
-    grades_dict = {}
-    total = 0
+    grades_dict = dict()
     grades_dict['ID'] = temp_record[0]
     grades_dict['Name'] = temp_record[1]  # STEP 1
 
@@ -67,7 +66,7 @@ def write_record(temp_record):
             temp_record['Test_4'],
             temp_record['Avg.']))
 
-# First methof to be called
+# First method to be called
 # LOGIC APPLIED:
 # STEP 1: The function reads the file grades.txt
 # STEP 2: Writes the top heading
@@ -82,7 +81,7 @@ def print_grades(input_file):
     flag = True
     print("{0:<10s}|{1:^10s}|{2:^10s}|{3:^10s}|{4:^10s}|{5:^10s}|{6:^10s}" .format(
         'ID', 'Name', 'Test_1', 'Test_2', 'Test_3', 'Test_4', 'Avg'))  # STEP 2
-    while(flag):
+    while flag:
         temp_record = grades_file.readline()
         if temp_record != "":
             temp_record = temp_record.split(",")  # STEP 3
